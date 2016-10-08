@@ -12,5 +12,5 @@ elif [ "$1" = "tweet-keyword" ]; then
     fi
     php run.php $1 $2 $3
 else
-    echo "Unrecognized command: available commands are common-followers and tweet-keyword"
+    echo "Unrecognized command: available commands are common-followers and tweet-keyword."
 fi
