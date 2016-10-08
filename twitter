@@ -1,0 +1,16 @@
+#!/bin/bash
+if [ "$1" = "common-followers" ]; then
+    if [ ! $# == 3 ]; then
+        echo "Usage: $0 common-followers username1 username2"
+        exit
+    fi
+    php run.php $1 $2 $3
+elif [ "$1" = "tweet-keyword" ]; then
+    if [ ! $# == 3 ]; then
+        echo "Usage: $0 tweet-keyword username keyword"
+        exit
+    fi
+    php run.php $1 $2 $3
+else
+    echo "Unrecognized command: available commands are common-followers and tweet-keyword"
+fi
